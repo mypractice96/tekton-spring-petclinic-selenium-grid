@@ -30,7 +30,7 @@ class SampleApplicationTests {
 		URL url=new URL("http://localhost:4444/wd/hub"); //hub url
 		WebDriver driver=new RemoteWebDriver(url, cap);
 		driver.manage().window().maximize();
-		String baseURL = "http://localhost:8080";
+		String baseURL = "http://petclinic-app-pipelines.apps.enentodemocluster.janus.com";
 		driver.get(baseURL); //Petclinic Url
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id=\"main-navbar\"]/ul/li[2]/a")).click();
