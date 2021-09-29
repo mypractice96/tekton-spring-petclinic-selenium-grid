@@ -27,7 +27,7 @@ class SampleApplicationTests {
 
 		DesiredCapabilities cap=DesiredCapabilities.chrome();
 		cap.setPlatform(Platform.WINDOWS);
-		URL url=new URL("http://localhost:4444/wd/hub"); //hub url
+		URL url=new URL("http://10.255.0.18:4444/wd/hub"); //hub url
 		WebDriver driver=new RemoteWebDriver(url, cap);
 		driver.manage().window().maximize();
 		String baseURL = "http://petclinic-app-pipelines.apps.enentodemocluster.janus.com";
